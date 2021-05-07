@@ -8,10 +8,10 @@ author: |
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   rmarkdown::html_document:
-  theme: readable
-  code_folding: hide
-  toc: true
-  toc_float: yes
+    theme: readable
+    code_folding: hide
+    toc: true
+    toc_float: yes
 ---
 
 ```{r setup, include=FALSE}
