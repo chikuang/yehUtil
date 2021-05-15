@@ -1,0 +1,4 @@
+name: Parallel computing
+description: >
+   Setup parallel computing
+create_dir: FALSE

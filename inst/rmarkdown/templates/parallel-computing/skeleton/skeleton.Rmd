@@ -1,0 +1,41 @@
+---
+title: "Title"
+subtitle: |
+  | subtitle
+author: |
+  | Chi-Kuang Yeh
+  | University of Waterloo
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  rmarkdown::html_document:
+    theme: readable
+    code_folding: hide
+    toc: true
+    toc_float: yes
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load package}
+
+cl <- makeCluster(detectCores() - 1)
+registerDoParallel(cl)
+invisible(clusterEvalQ(cl, expr = {
+  # load packages
+}))
+
+```
+
+```{r}
+library(dplyr)
+library(pbapply)
+
+# define function
+my_function <- function(){}
+Nsim <- 1000
+res <- pblapply(1:Nsim, cl = cl, FUN = my_function)
+stopCluster(cl)
+```
