@@ -17,6 +17,9 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(pbapply)
+library(doParallel)
 ```
 
 ```{r load package}
@@ -30,9 +33,6 @@ invisible(clusterEvalQ(cl, expr = {
 ```
 
 ```{r}
-library(dplyr)
-library(pbapply)
-
 # define function
 my_function <- function(){}
 Nsim <- 1000

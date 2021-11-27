@@ -7,10 +7,16 @@ author: |
   | University of Waterloo
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  rmarkdown::html_document:
-    theme: readable
+  rmdformats::downcute:
+    self_contained: true
+    default_style: "dark"
+    downcute_theme: "chao"
+    highlight: kate
     code_folding: hide
-    toc: true
-    toc_float: yes
     number_sections: true
 ---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
