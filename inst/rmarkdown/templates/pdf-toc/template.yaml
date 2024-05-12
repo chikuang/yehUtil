@@ -1,0 +1,4 @@
+name: Chi-Kuang Rmarkdown pdf with toc
+description: >
+   Template for reports in pdf format with table of contents
+create_dir: FALSE
