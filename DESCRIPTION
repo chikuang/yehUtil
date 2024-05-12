@@ -1,16 +1,18 @@
 Package: yehUtil
-Title: What the Package Does (One Line, Title Case)
+Title: Personal package for storing some personalized Rmarkdown templates
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Chi-Kuang",
+           family = "Yeh",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "chi-kuang.yeh@uwaterloo.ca",
+           comment = c(ORCID = "0000-0001-7057-2096"))
+Description: This package contains some Rmarkdown templates custome for personal use, including: 1) A PDF format with a Table of contents with a default font size of 11pt, 2) A dark theme HTML created based on 'downcute' theme in 'rmdformats' package with a Table of contents and code folding option, 3) A RMarkdown template for parallel computing with my own style based on the R package 'lapply'.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+
+
+
