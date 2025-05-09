@@ -4,7 +4,7 @@ subtitle: |
   | Subtitle
 author: |
   | Chi-Kuang Yeh
-  | University of Waterloo
+  | McGill University & University of Waterloo
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   rmarkdown::html_document:

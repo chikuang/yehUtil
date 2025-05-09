@@ -4,7 +4,7 @@ subtitle: |
   | subtitle
 author: |
   | Chi-Kuang Yeh
-  | University of Waterloo
+  | McGill University \& University of Waterloo
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   rmarkdown::html_document:
@@ -17,25 +17,32 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(dplyr)
+## Neccessary
 library(pbapply)
 library(doParallel)
+
+## Optional
+library(dplyr)
+library(rlist)
+library(tibble)
 ```
 
-```{r load package}
+```{r core-registeration}
 
 cl <- makeCluster(detectCores() - 1)
 registerDoParallel(cl)
 invisible(clusterEvalQ(cl, expr = {
-  # load packages
+  # load packages and custom functions
 }))
 
 ```
 
-```{r}
-# define function
-my_function <- function(){}
+```{r parallel-body}
+# define iterator/function
+my_function <- function(i){ # i is the seed number
+  set.seed(i) # set seed.
+}
 Nsim <- 1000
-res <- pblapply(1:Nsim, cl = cl, FUN = my_function)
+res <- pbapply::pblapply(1:Nsim, cl = cl, FUN = my_function)
 stopCluster(cl)
 ```
