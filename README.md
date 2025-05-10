@@ -1,30 +1,35 @@
-# yehUtil: Personal package for storing some personalized Rmarkdown templates for Chi-Kuang Yeh
+# yehUtil: Personal package for some personalized Rmarkdown templates
 
-*Chi-Kuang Yeh*
+May 10, 2025
 
-*May 9, 2025*
-
-![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
-
-[**Home**](https://optDesign.readthedocs.io/)
-| [**Description**](#description)
-| [**Installation**](#installation)
----
+**Chi-Kuang Yeh**  
+McGill University and University of Waterloo
 
 ## Description
 
-This package contains some Rmarkdown templates custome for personal use. It contains:
+This package contains some Rmarkdown templates costume for personal use.
+It contains:
 
-1. A PDF format with a Table of contents with a default font size of 11pt
-2. A dark theme HTML created based on rmdformats::downcute with a Table of contents and code folding option
-3. A RMarkdown template for parallel computing with my own style based on the R package `lapply`
+1.  A PDF format with a Table of contents with a default font size of
+    11pt
+2.  A dark theme HTML created based on rmdformats::downcute with a Table
+    of contents and code folding option
+3.  A RMarkdown template for parallel computing with my own style based
+    on the R package `lapply`
+4.  Template for parallel computing using the *pbapply* package
 
 ## Installation
 
-```r
+``` r
 devtools::install_github("chikuang/yehUtil")
 ```
 
 ## Contact or Suggestions
 
-Please contact me (Chi-Kuang Yeh) at [chi-kuang.yeh@uwaterloo.ca](mailto:chi-kuang.yeh@uwaterloo.ca).
+If you encounter any issues, please contact me [Chi-Kuang
+Yeh](https://chikuang.github.io/) at <chi-kuang.yeh@uwaterloo.ca> or
+<chi-kuang.yeh@mail.mcgill.ca>.
+
+## TODO
+
+- [ ] Add more details
