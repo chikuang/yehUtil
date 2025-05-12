@@ -20,7 +20,7 @@ This package contains some Rmarkdown templates costume for personal use. It cont
 
 1. A PDF format with a Table of contents with a default font size of 11pt
 2. A dark theme HTML created based on rmdformats::downcute with a Table of contents and code folding option
-3. A RMarkdown template for parallel computing with my own style based on the R package `lapply`
+3. A RMarkdown template for parallel computing with my own style based on the R package `pbapply`
 4. Template for parallel computing using the *pbapply* package
 
 ## Installation
@@ -36,3 +36,4 @@ If you encounter any issues, please contact me [Chi-Kuang Yeh](https://chikuang.
 ## TODO
 
 + [ ] Add more details 
++ [ ] Add template in **qmd** format

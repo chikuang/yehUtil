@@ -1,6 +1,6 @@
 # yehUtil: Personal package for some personalized Rmarkdown templates
 
-May 10, 2025
+May 12, 2025
 
 **Chi-Kuang Yeh**  
 McGill University and University of Waterloo
@@ -15,7 +15,7 @@ It contains:
 2.  A dark theme HTML created based on rmdformats::downcute with a Table
     of contents and code folding option
 3.  A RMarkdown template for parallel computing with my own style based
-    on the R package `lapply`
+    on the R package `pbapply`
 4.  Template for parallel computing using the *pbapply* package
 
 ## Installation
@@ -33,3 +33,4 @@ Yeh](https://chikuang.github.io/) at <chi-kuang.yeh@uwaterloo.ca> or
 ## TODO
 
 - [ ] Add more details
+- [ ] Add template in **qmd** format
